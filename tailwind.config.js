@@ -7,8 +7,8 @@ module.exports = {
         primary: '#FCD500'
       },
       fontFamily: {
-        sans: ['Nunito', 'sans-serif'],
-        heading: ['Nunito', 'sans-serif']
+        sans: ['Arvo', 'sans-serif'],
+        heading: ['Arvo', 'sans-serif']
       }
     },
   },
