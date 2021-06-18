@@ -23,17 +23,28 @@
 
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
-	<header id="masthead" class="site-header">
-		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'bees' ); ?></button>
-			<?php
-			wp_nav_menu(
-				array(
-					'theme_location' => 'menu-1',
-					'menu_id'        => 'primary-menu',
-				)
-			);
-			?>
-		</nav><!-- #site-navigation -->
+	<header id="masthead" class="site-header  bg-primary">
+		<section class="flex justify-between md:container md:mx-auto items-center">
+			<div>
+				<svg class="w-10" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+				<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
+				</svg>
+			</div>
+			<nav id="site-navigation" class="main-navigation">
+				<?php
+				wp_nav_menu(
+					array(
+						'theme_location' => 'menu-1',
+						'menu_id'        => 'primary-menu',
+						'menu_class'     => 'flex',
+						'before'	     => '<span class="m-2">',
+						'after'          => '</span>'
+					)
+				);
+				?>
+			</nav><!-- #site-navigation -->
+		</section>
+
+
 	</header><!-- #masthead -->
 	<main class="md:container md:mx-auto">
