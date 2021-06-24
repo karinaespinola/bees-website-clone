@@ -23,34 +23,27 @@
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 	<header id="masthead" class="site-header  bg-primary">
-	<section class="md:container md:mx-auto h-screen relative">
-		<section class="flex justify-between items-center pt-5">
-			<div>
-				<svg class="w-10" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-				<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
-				</svg>
-			</div>
-			<nav id="site-navigation" class="main-navigation">
-				<?php
-				wp_nav_menu(
-					array(
-						'theme_location' => 'menu-1',
-						'menu_id'        => 'primary-menu',
-						'menu_class'     => 'flex',
-						'before'	     => '<span class="m-2">',
-						'after'          => '</span>'
-					)
-				);
-				?>
-			</nav><!-- #site-navigation -->
+		<section class="md:container md:mx-auto">
+			<section class="flex justify-between items-center pt-5 pb-5">
+				<div>
+					<svg class="w-10" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
+					</svg>
+				</div>
+				<nav id="site-navigation" class="main-navigation">
+					<?php
+					wp_nav_menu(
+						array(
+							'theme_location' => 'menu-1',
+							'menu_id'        => 'primary-menu',
+							'menu_class'     => 'flex',
+							'before'	     => '<span class="m-2">',
+							'after'          => '</span>'
+						)
+					);
+					?>
+				</nav><!-- #site-navigation -->
+			</section>
 		</section>
-		<section class="absolute bottom-2/4">
-			<h1 class="text-4xl font-bold uppercase border-b-8 border-black">We are listening...</h1>
-			<h2 class="mt-3">Don't hold back we are ready to turn your ideas into goals</h2>	
-		</section>
-	</section>
-
-
-
 	</header><!-- #masthead -->
-	<main class="md:container md:mx-auto">
+	<main>
