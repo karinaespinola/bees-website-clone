@@ -5,7 +5,8 @@ module.exports = {
         index: path.resolve(__dirname, "src", "app.js") 
     },
     output: {
-        path: path.resolve(__dirname, "build")
+        path: path.resolve(__dirname, "build"),
+        filename: "app.js"
     },
     watch: true
 }
