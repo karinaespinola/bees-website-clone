@@ -6,9 +6,14 @@
   "dependencies": {
     "tailwindcss": "^2.2.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "webpack": "^5.41.1",
+    "webpack-cli": "^4.7.2",
+    "webpack-dev-server": "^3.11.2"
+  },
   "scripts": {
-    "build-css": "tailwindcss -i ./src/style.css -o style.css"
+    "build-css": "tailwindcss -i ./src/style.css -o style.css",
+    "dev": "webpack --mode development"
   },
   "keywords": [],
   "author": "",
