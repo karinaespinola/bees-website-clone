@@ -32441,6 +32441,117 @@ video {
   content: none;
 }
 
+/***********************************************************************
+**************************** Clouds animation **************************/
+
+.clouds {
+  position: relative;
+  height: 80vh;
+  z-index: 1;
+}
+
+.clouds img {
+  position: absolute;
+}
+
+.clouds img:nth-child(1) {
+  top: calc(100% - 40%);
+  left: 40%;
+  -webkit-animation-name: clouds;
+  animation-name: clouds;
+  -webkit-animation-duration: calc(20s + 10s);
+  animation-duration: calc(20s + 10s);
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.clouds img:nth-child(2) {
+  top: calc(100% - 75%);
+  left: 75%;
+  -webkit-animation-name: clouds;
+  animation-name: clouds;
+  -webkit-animation-duration: calc(20s + 3s);
+  animation-duration: calc(20s + 3s);
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.clouds img:nth-child(3) {
+  top: calc(100% - 65%);
+  left: 65%;
+  -webkit-animation-name: clouds;
+  animation-name: clouds;
+  -webkit-animation-duration: calc(20s + 4s);
+  animation-duration: calc(20s + 4s);
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.clouds img:nth-child(4) {
+  top: calc(100% - 50%);
+  left: 50%;
+  -webkit-animation-name: clouds;
+  animation-name: clouds;
+  -webkit-animation-duration: calc(20s + 10s);
+  animation-duration: calc(20s + 10s);
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes clouds {
+  0% {
+    opacity: 0.5;
+  }
+
+  5% {
+    opacity: 1;
+  }
+
+  95% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    left: 0;
+  }
+}
+
+@keyframes clouds {
+  0% {
+    opacity: 0.5;
+  }
+
+  5% {
+    opacity: 1;
+  }
+
+  95% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    left: 0;
+  }
+}
+
 @media (min-width: 640px){
   .sm\:container{
     width: 100%;
